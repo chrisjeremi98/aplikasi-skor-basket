@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/layoutparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:paddingBottom="16dp"
+                android:text="Basketball Score"
+                android:textAppearance="?android:textAppearanceLarge" />
+
+            <LinearLayout
+                android:id="@+id/layoutAnakAll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:id="@+id/layoutAnakHome"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/judulHome"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="8dp"
+                        android:text="Home"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/point_Home"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="8dp"
+                        android:text="0"
+                        android:textAppearance="?android:textAppearanceLarge" />
+
+                    <Button
+                        android:id="@+id/twoPointsHome"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:onClick="twoPointsHome"
+                        android:text="2pts" />
+
+                    <Button
+                        android:id="@+id/threePointsHome"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:onClick="threePointsHome"
+                        android:text="3pts" />
+
+                    <Button
+                        android:id="@+id/freeThrowPointsHome"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:onClick="freeThrowPointHome"
+                        android:text="Free Throw" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="8dp"
+                    android:background="#c0c0c0" />
+
+                <LinearLayout
+                    android:id="@+id/layoutAnakAway"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/judulAway"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="8dp"
+                        android:text="Away"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/point_Away"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="8dp"
+                        android:text="0"
+                        android:textAppearance="?android:textAppearanceLarge" />
+
+                    <Button
+                        android:id="@+id/twoPointsAway"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:onClick="twoPointsAway"
+                        android:text="2pts" />
+
+                    <Button
+                        android:id="@+id/threePointsAway"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:onClick="threePointsAway"
+                        android:text="3pts" />
+
+                    <Button
+                        android:id="@+id/freeThrowPointsAway"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:onClick="freeThrowPointAway"
+                        android:text="Free Throw" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/layoutparent"
+            android:layout_marginTop="100dp"
+            android:text="Reset"
+            android:onClick="resetScore"/>
+
+    </RelativeLayout>
+</ScrollView>
